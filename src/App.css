@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+:root {
+  --color-black: #0f141e;
+  --color-white: #f7f7f7;
+  --color-gray: #878a8f;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  --color-red: #ff6666;
+  --color-green: #78f2c5;
+  --color-violet: #9999ff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 3rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+  font-size: 2rem;
 }
-
-.App-link {
-  color: #61dafb;
+h3 {
+  font-size: 1.5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.875rem;
+}
+p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+/* ---------------------------------- APP ---------------------------------- */
+.app {
+  height: 100vh;
+  user-select: none;
+  background: var(--color-white);
+  color: var(--color-black);
+  font-family: 'Open Sans', sans-serif;
 }
