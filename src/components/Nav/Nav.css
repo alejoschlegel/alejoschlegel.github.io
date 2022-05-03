@@ -1,0 +1,80 @@
+/* ---------------------------------- NAV ---------------------------------- */
+.nav {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  z-index: 10;
+}
+.navbar_left {
+  display: flex;
+  align-items: center;
+}
+.navbar_left img {
+  height: 3.5rem;
+}
+.navbar_left div{
+  padding-left: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.navbar_left div h6{
+  font-weight: 500;
+  letter-spacing: 0.13rem;
+}
+.navbar_right {
+  display: flex;
+  align-items: center;
+}
+.navbar_right span {
+  font-size: 3rem;
+} 
+/* ---------------------------------- MENU ---------------------------------- */
+.menu_on{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  animation: slideIn 0.4s forwards;
+  z-index: 10;
+  height: 100%;
+  right: 0;
+}
+@keyframes slideIn {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+.menu_on span{
+  font-size: 3rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu_on p {
+  font-size: 0.85rem;
+  padding-top: 2rem;
+}
+.menu_on a {
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-right: 5rem;
+  padding-top: 0.2rem;
+}
+.menu_on a:hover{
+  border-bottom: var(--color-white) solid 0.2rem;
+}
+.menu_off{
+  display: none;
+}
