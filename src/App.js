@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 //components
 import Nav from './components/Nav/Nav';
+import Home from './components/Home/Home';
 
 export default function App() {
   return (
@@ -9,7 +10,7 @@ export default function App() {
       <BrowserRouter>
         <Nav/>
         <Routes>
-          <Route path="/" element={< div />} />
+          <Route path="/" element={< Home />} />
         </Routes>
       </BrowserRouter>
     </div>

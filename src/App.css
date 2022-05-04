@@ -31,9 +31,16 @@ p {
   font-size: 1.2rem;
   font-weight: 400;
 }
+.text_muted {
+  color: var(--color-gray);
+}
+.select_all {
+  user-select: all;
+}
 /* ---------------------------------- APP ---------------------------------- */
 .app {
   height: 100vh;
+  width: 100vw;
   user-select: none;
   background: var(--color-white);
   color: var(--color-black);
